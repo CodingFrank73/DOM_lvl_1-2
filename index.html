@@ -10,23 +10,52 @@
 </head>
 
 <body>
-    <div class="style">
-        <div class="example">
-            Ein div mit class="example".
+    <article>
+        <div class="style">
+            <div class="example">
+                Ein div mit class="example".
+            </div>
+
+            <div class="example">
+                Ein weiteres div mit class="example".
+            </div>
+
+            <p class="example">Dies ist ein p-Element mit class="example"</p>
+
+            <p>Dies ist ein <span class="example">span</span> Element mit class="example" in einem anderen p-Element.
+            </p>
+
+            <p>Klicken Sie auf die Button, um die Hintergrundfarbe aller Elemente mit class="example" zu ändern.</p>
+
+            <button class="example" onclick="myFunction()">Versuchen Sie es</button>
         </div>
+    </article><br>
 
-        <div class="example">
-            Ein weiteres div mit class="example".
-        </div>
+    <article>
+        <ul>
+            <li><a class="nav" id="navHome" href="#home">Home</a></li>
+            <li><a class="nav" id="navNews" href="#news">News</a></li>
+            <li><a class="nav" id="navContact" href="#contact">Contact</a></li>
+            <li class="nav" style="float:right"><a class="active" id="navChange">Change me</a></li>
+        </ul>
+    </article><br>
 
-        <p class="example">Dies ist ein p-Element mit class="example"</p>
+    <form action="" onsubmit=" return false">
+        <select id="farbeAuswahlen">
+            <option id="1">Medium Orchid</option>
+            <option id="2">Mint Cream</option>
+            <option id="3">Dodger Blue</option>
+            <option id="4">Goldenrod</option>
+            <option id="5">Wheat</option>
+            <option id="6">Medium Turquoise</option>
+            <option id="7">Moccasin</option>
+            <option id="8">Fire Brick</option>
+            <option id="9">Lime Green</option>
+            <option id="10">Slate Gray</option>
+        </select>
+        <button id="button">Farbe von Liste Background farben</button>
+    </form>
 
-        <p>Dies ist ein <span class="example">span</span> Element mit class="example" in einem anderen p-Element.</p>
-
-        <p>Klicken Sie auf die Button, um die Hintergrundfarbe aller Elemente mit class="example" zu ändern.</p>
-
-        <button class="example" onclick="myFunction()">Versuchen Sie es</button>
-    </div>
 
     <script src="assets/js/main.js"></script>
 </body>
