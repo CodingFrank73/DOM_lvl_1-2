@@ -43,8 +43,21 @@ let bgColor;
 
 btn.addEventListener('click', () => {
     document.getElementsByTagName('form')[0].style.backgroundColor = bgColor;
+    event.preventDefault();
 });
 
-chk.addEventListener('change', () => {
-    bgColor = chk.value.replace(/ /g, "");
+chk.addEventListener('change', (e) => {
+    bgColor = e.target.value.replace(/ /g, "");
+
+    let options = document.getElementsByTagName("option")
+
+    // for (i = 0; i < options.length; i++) {
+    //     if (options[i].selected == true) {
+    //         let ff = document.getElementById(options[i].id).value;
+    //         console.log(options[i].backgroundColor = "green");
+    //         console.log(ff);
+    //         options[i].backgroundColor = "green"
+    //     }
+    // }
+
 })
